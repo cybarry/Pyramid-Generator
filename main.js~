@@ -1,0 +1,4 @@
+const character = prompt("please enter a character: ");
+const count = prompt("please enter a number: ");
+let inverted = prompt("please enter either true or false: ");
+const rows = [];
