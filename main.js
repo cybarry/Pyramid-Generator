@@ -1,6 +1,6 @@
-const character = prompt("please enter a character: ");
-const count = prompt("please enter a number: ");
-let inverted = prompt("please enter either true or false: ");
+const character = "^";
+const count = 10;
+let inverted = false;
 const rows = [];
 
 
@@ -10,9 +10,9 @@ function padRow(rowNumber, rowCount) {
 
 for (let i = 0; i <= count; i++) {
     if (inverted) {
-	rows.unshift(padRow(i, count));
+        rows.unshift(padRow(i, count));
     } else {
-	rows.push(padRow(i, count));
+        rows.push(padRow(i, count));
     }
 }
 
